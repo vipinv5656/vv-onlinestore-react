@@ -31,7 +31,7 @@ const SingleProductPage = () => {
 
  useEffect(()=>{
   fetchSingleProduct(`${url}${id}`)
- })
+ },[])
 
  useEffect(()=>{
   if(error){
